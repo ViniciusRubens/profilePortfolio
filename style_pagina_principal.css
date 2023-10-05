@@ -15,20 +15,19 @@ body {
     display: flex;
     border: 1px solid green;
     width: 1440px;
-    gap: 60px;
 }
 
-#left {
-    border: 1px solid blue;
-    width: 388px;
+#personalInformation {
+    width: 348px;
+    margin: 40px auto auto 40px;
 }
 
-#right {
-    border: 1px solid red;
+#personalProjects {
+    width: 952px;
+    margin: 40px 40px auto auto;
 }
 
 #profile {
-    margin: 40px auto auto 40px;
     border-radius: 20px;
     background: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
@@ -68,7 +67,7 @@ body {
     background: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
 
-    margin: 30px auto auto 40px;
+    margin-top: 30px;
     padding: 30px 40px;
 }
 
@@ -110,7 +109,7 @@ body {
     background: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
 
-    margin: 30px auto auto 40px;
+    margin-top: 30px;
 
     list-style: none;
     display: flex;
@@ -146,7 +145,7 @@ body {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
 
     padding: 30px 20px;
-    margin: 30px auto auto 40px;
+    margin-top: 30px;
 }
 
 #technologiesTitle {
@@ -187,11 +186,11 @@ body {
     background: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
 
-    margin: 30px auto auto 40px;
-    padding: 30px 20px;
-
     color: #837E9F;
     font-family: Merriweather Sans;
+
+    margin-top: 30px;
+    padding: 30px 20px;
 }
 
 #workExperienceTitle {
@@ -239,11 +238,11 @@ body {
     background: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
 
-    margin: 30px auto auto 40px;
-    padding: 30px 20px;
-
     color: #837E9F;
     font-family: Merriweather Sans;
+
+    margin-top: 30px;
+    padding: 30px 20px;
 }
 
 #academicExperienceTitle {
@@ -260,4 +259,118 @@ body {
 
     padding: 0px 20px;
 }
+
+#aboutMe {
+    display: block;
+    border-radius: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+
+    color: #837E9F;
+    font-family: Merriweather Sans;
+
+    padding: 30px;
+}
+
+#aboutMeTitle {
+    font-size: 20px;
+    font-weight: 700;
+    
+    padding-bottom: 20px;
+}
+
+#aboutMeDescription {
+    font-weight: 300;
+    text-align: justify;
+}
+
+#myProjects {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+
+    color: #837E9F;
+    font-family: Merriweather Sans;
+
+    margin-top: 30px;
+}
+
+#myProjectsTitle {
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+#myProjects a {
+    color: #837E9F;
+    font-family: Merriweather Sans;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+#myProjectsList {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 30px;
+
+    margin-top: 30px;
+}
+
+#myProjectsList li {
+    display: block;
+    border-radius: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+
+    padding: 30px;
+
+    color: #837E9F;
+    font-family: Merriweather Sans;
+}
+
+#projectHeader {
+    display: flex;
+    align-items: center;
+    padding-bottom: 22px;
+}
+
+#projectHeader img {
+    margin-right: 16px;
+}
+
+#projectTitle {
+    font-weight: 700;
+}
+
+#projectDescription {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+
+    padding-bottom: 20px;
+}
+
+#projectFooter {
+    display: flex;
+    align-items: center;
+}
+
+#projectFooter img {
+    margin-right: 16px;
+}
+
+#projectFooter span {
+    display: flex;
+    margin-left: auto;
+}
+
 
