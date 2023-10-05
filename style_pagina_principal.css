@@ -20,11 +20,11 @@ body {
 
 #left {
     border: 1px solid blue;
+    width: 388px;
 }
 
 #right {
     border: 1px solid red;
-    width: 60px;
 }
 
 #profile {
@@ -32,14 +32,13 @@ body {
     border-radius: 20px;
     background: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-
-    width: 348px;
-    height: 292px;
 }
 
 #profile img {
     margin: 32px 110px 30px;
     width: 128px;
+    border-radius: 128px;
+    border: 2px solid #0F0; 
 }
 
 #name p{
@@ -48,9 +47,8 @@ body {
     font-size: 23px;
     font-weight: 700;
 
-    margin: 0px 0px 10px;
-
     text-align: center;
+    padding-bottom: 10px;
 }
 
 #position p {
@@ -60,6 +58,51 @@ body {
     font-weight: 300;
 
     text-align: center;
+    padding-bottom: 49px;
+}
+
+#educationalBackground {
+    color: #837E9F;
+    font-family: Merriweather Sans;
+    border-radius: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+
+    margin: 30px auto auto 40px;
+    padding: 30px 40px;
+}
+
+#educationalBackgroundTitle{
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-bottom: 20px;
+}
+
+#institutionName {
+    font-size: 14px;
+    font-weight: 600;
+
+    padding-bottom: 5px;
+}
+
+#Title {
+    font-size: 14px;
+    font-weight: 500;
+
+    padding-bottom: 5px;
+}
+
+#educationalBackgroundTime {
+    font-size: 12px;
+    font-weight: 300;
+
+    padding-bottom: 2px;
+}
+
+#today {
+    font-size: 12px;
+    font-weight: 300;
 }
 
 #links {
@@ -97,18 +140,16 @@ body {
 }
 
 #technologies {
+    display: block;
     border-radius: 20px;
     background: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
 
+    padding: 30px 20px;
     margin: 30px auto auto 40px;
-
-    padding: 30px 20px 15px;
-
-    display: block;
 }
 
-#technologies #technologiesTitle {
+#technologiesTitle {
     color: #837E9F;
     font-family: Merriweather Sans;
     font-size: 20px;
@@ -118,9 +159,10 @@ body {
 }
 
 #technologiesList {
+    display: grid;
     list-style: none;
-    column-count: 3;
-    column-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px 15px;
 }
 
 #technologiesList li {
@@ -132,11 +174,90 @@ body {
 
     border-radius: 30px;
     background: #CB92B1;
-
-    margin-bottom: 15px;
 }
 
 #technologies li p {
     padding-top: 6px;
     padding-bottom: 7px;
 }
+
+#workExperience {
+    display: block;
+    border-radius: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+
+    margin: 30px auto auto 40px;
+    padding: 30px 20px;
+
+    color: #837E9F;
+    font-family: Merriweather Sans;
+}
+
+#workExperienceTitle {
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-bottom: 20px;
+}
+
+#workExperienceList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 0px 20px;
+}
+
+#companyName {
+    font-size: 14px;
+    font-weight: 700;
+
+    padding-bottom: 4px;
+}
+
+#jobTitle {
+    font-size: 13px;
+    font-weight: 500;
+
+    padding-bottom: 2px;
+}
+
+#workTime {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#description{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#academicExperience {
+    display: block;
+    border-radius: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+
+    margin: 30px auto auto 40px;
+    padding: 30px 20px;
+
+    color: #837E9F;
+    font-family: Merriweather Sans;
+}
+
+#academicExperienceTitle {
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-bottom: 20px;
+}
+
+#academicExperienceList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 0px 20px;
+}
+
