@@ -13,7 +13,6 @@ body {
 
 #container {
     display: flex;
-    border: 1px solid green;
     width: 1440px;
 }
 
@@ -260,6 +259,40 @@ body {
     padding: 0px 20px;
 }
 
+#certificates {
+    display: block;
+    border-radius: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+
+    color: #837E9F;
+    font-family: Merriweather Sans;
+
+    padding: 30px;
+
+    margin-top: 30px;
+}
+
+#certificates p {
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-bottom: 15px;
+}
+
+#certificates button {
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);;
+    
+    color: #837E9F;
+    font-family: Merriweather Sans;
+    font-size: 14px;
+    font-weight: 400;
+
+    padding: 8px;
+}
+
 #aboutMe {
     display: block;
     border-radius: 20px;
@@ -373,4 +406,81 @@ body {
     margin-left: auto;
 }
 
+#myRecentPosts {
+    margin-top: 30px;
 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    
+    color: #837E9F;
+    font-family: Merriweather Sans;
+    font-size: 20px;
+    font-weight: 700;
+
+    border-radius: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+}
+
+#myRecentPostsList {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#myRecentPostsList > li {
+    display: flex;
+    border-radius: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    gap: 30px;
+
+    padding: 30px;
+
+    color: #837E9F;
+    font-family: Merriweather Sans;
+}
+
+#imageProfile img {
+    width: 128px;
+    height: 128px;
+
+    border-radius: 128px;
+}
+
+#recentPostsListSubjects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+
+    list-style: none;
+}
+
+#recentPostsTitle {
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-bottom: 5px;
+}
+
+#recentPostsDate {
+    font-size: 12px;
+    font-weight: 300;
+
+    padding-bottom: 5px;
+}
+
+#recentPostsDescription {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+
+    padding-bottom: 15px;
+}
