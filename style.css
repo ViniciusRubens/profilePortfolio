@@ -17,57 +17,69 @@ body {
 }
 
 .container {
+    color: #837E9F;
+    font-family: Merriweather Sans;
     display: flex;
     width: 1440px;
 }
 
-.container .personalInformation {
+.personalInformation {
     margin-top: 40px;
     margin-left: 40px;
 
     width: 348px;
 }
 
+h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: justify;
+
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: justify;
+}
+
 /* PROFILE */
 
-.container .personalInformation .profile {
+.profile {
     border-radius: 20px;
     background: var(--bg-cards);
     box-shadow: var(--box-shadow);
 }
 
-.container .personalInformation .profile img {
+.profile img {
     margin: 32px 110px 30px;
     width: 128px;
     border-radius: 128px;
     border: 2px solid #0F0;
 }
 
-.container .personalInformation .profile .information h1 {
-    font-family: Merriweather Sans;
-    color: #837E9F;
+.information h1 {
     font-size: 23px;
-    font-weight: 700;
-
     text-align: center;
     padding-bottom: 10px;
 }
 
-.container .personalInformation .profile .information h3 {
-    color: #837E9F;
-    font-family: Merriweather Sans;
-    font-size: 13px;
-    font-weight: 300;
-
+.information h3 {
+    font-size: 14px;
     text-align: center;
     padding-bottom: 49px;
 }
 
 /* EDUCATIONAL BACKGROUND */
 
-.container .personalInformation .educationalBackground {
-    color: #837E9F;
-    font-family: Merriweather Sans;
+.educationalBackground {
     border-radius: 20px;
     background: var(--bg-cards);
     box-shadow: var(--box-shadow);
@@ -76,28 +88,16 @@ body {
     padding: 30px 40px;
 }
 
-.container .personalInformation .educationalBackground h1 {
-    font-size: 20px;
-    font-weight: 700;
-
-    padding-bottom: 20px;
-}
-
-.container .personalInformation .educationalBackground h2 {
-    font-size: 14px;
-    font-weight: 600;
-
+.educationalBackground h2 {
     padding-bottom: 5px;
 }
 
-.container .personalInformation .educationalBackground h3 {
+.educationalBackground h3 {
     font-size: 14px;
-    font-weight: 500;
-
-    padding-bottom: 5px;
+    padding-bottom: 7px;
 }
 
-.container .personalInformation .educationalBackground p {
+.educationalBackground p {
     font-size: 12px;
     font-weight: 300;
 }
@@ -122,8 +122,6 @@ body {
 .links li {
     display: flex;
     align-items: center;
-    color: #837E9F;
-    font-family: Merriweather Sans;
     font-size: 13px;
     font-weight: 400;
 }
@@ -150,26 +148,16 @@ body {
     margin-top: 30px;
 }
 
-.technologies h1 {
-    color: #837E9F;
-    font-family: Merriweather Sans;
-    font-size: 20px;
-    font-weight: 700;
-
-    padding-bottom: 20px;
-}
-
-.technologies .technologiesList {
+.technologiesList {
     display: grid;
     list-style: none;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px 15px;
 }
 
-.technologies .technologiesList li {
+.technologiesList li {
     color: black;
     text-align: center;
-    font-family: Merriweather Sans;
     font-size: 10px;
     font-weight: 700;
 
@@ -177,7 +165,7 @@ body {
     background: #CB92B1;
 }
 
-.technologies .technologiesList li p {
+.technologiesList li p {
     padding-top: 6px;
     padding-bottom: 7px;
 }
@@ -190,18 +178,8 @@ body {
     background: var(--bg-cards);
     box-shadow: var(--box-shadow);
 
-    color: #837E9F;
-    font-family: Merriweather Sans;
-
     margin-top: 30px;
     padding: 30px 20px;
-}
-
-.academicExperience h1 {
-    font-size: 20px;
-    font-weight: 700;
-
-    padding-bottom: 20px;
 }
 
 .academicExperience .academicExperienceList {
@@ -212,26 +190,21 @@ body {
     padding: 0px 20px;
 }
 
-.academicExperience .academicExperienceList li h1 {
+.academicExperienceList li h1 {
     font-size: 14px;
-    font-weight: 700;
-
-    padding-bottom: 4px;
+    padding-bottom: 5px;
 }
 
-.academicExperience .academicExperienceList li h2 {
+.academicExperienceList li h2 {
     font-size: 13px;
-    font-weight: 500;
-
-    padding-bottom: 2px;
+    padding-bottom: 10px;
 }
 
-.academicExperience .academicExperienceList li h3 {
-    font-size: 12px;
-    font-weight: 300;
+.academicExperienceList li h3 {
+    padding-bottom: 7px;
 }
 
-.academicExperience .academicExperienceList li p {
+.academicExperienceList li p {
     font-size: 12px;
     font-weight: 400;
 }
@@ -244,33 +217,25 @@ body {
     background: var(--bg-cards);
     box-shadow: var(--box-shadow);
 
-    color: #837E9F;
-    font-family: Merriweather Sans;
-
     padding: 30px;
 
     margin-top: 30px;
     margin-bottom: 50px;
 }
 
-.certificates h1 {
-    font-size: 20px;
-    font-weight: 700;
-
-    padding-bottom: 15px;
-}
-
-.certificates button {
+button {
     border: none;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);;
-    
-    color: #837E9F;
-    font-family: Merriweather Sans;
-    font-size: 14px;
-    font-weight: 400;
 
     padding: 8px;
+}
+
+button h2 {
+    color: #837E9F;
+    text-align: center;  
+
+    padding: 0px 15px;
 }
 
 /* MAIN */
@@ -288,17 +253,7 @@ body {
     background: var(--bg-cards);
     box-shadow: var(--box-shadow);
 
-    color: #837E9F;
-    font-family: Merriweather Sans;
-
     padding: 30px;
-}
-
-.aboutMe h1 {
-    font-size: 20px;
-    font-weight: 700;
-    
-    padding-bottom: 20px;
 }
 
 .aboutMe p {
@@ -314,18 +269,8 @@ body {
     background: var(--bg-cards);
     box-shadow: var(--box-shadow);
 
-    color: #837E9F;
-    font-family: Merriweather Sans;
-
     margin-top: 30px;
     padding: 30px 20px;
-}
-
-.workExperience h1 {
-    font-size: 20px;
-    font-weight: 700;
-
-    padding-bottom: 20px;
 }
 
 .workExperienceList {
@@ -336,26 +281,23 @@ body {
     padding: 0px 20px;
 }
 
-.workExperience .workExperienceList li h1 {
+.workExperienceList li h1 {
     font-size: 14px;
-    font-weight: 700;
-
-    padding-bottom: 4px;
+    padding-bottom: 5px;
 }
 
-.workExperience .workExperienceList li h2 {
+.workExperienceList li h2 {
     font-size: 13px;
-    font-weight: 500;
-
-    padding-bottom: 2px;
+    padding-bottom: 10px;
 }
 
-.workExperience .workExperienceList li h3 {
+.workExperienceList li h3 {
     font-size: 12px;
     font-weight: 300;
+    padding-bottom: 7px;
 }
 
-.workExperience .workExperienceList li p {
+.workExperienceList li p {
     font-size: 12px;
     font-weight: 400;
 }
@@ -369,16 +311,10 @@ body {
     background: var(--bg-cards);
     box-shadow: var(--box-shadow);
 
-    color: #837E9F;
-    font-family: Merriweather Sans;
-
     margin-top: 30px;
 }
 
 .myProjects h1 {
-    font-size: 20px;
-    font-weight: 700;
-
     padding-top: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
@@ -412,27 +348,18 @@ body {
     box-shadow: var(--box-shadow);
 
     padding: 30px;
-
-    color: #837E9F;
-    font-family: Merriweather Sans;
 }
 
-.myProjectsList li .cardTop {
+.cardTop {
     display: flex;
-    align-items: center;
-    padding-bottom: 22px;
+    align-items: baseline;
 }
 
-.myProjectsList li .cardTop img {
+.cardTop img {
     margin-right: 16px;
 }
 
-.myProjectsList li .cardTop h1 {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.myProjectsList li .cardMiddle p {
+.cardMiddle p {
     font-weight: 400;
     font-size: 14px;
     text-align: justify;
@@ -440,16 +367,16 @@ body {
     padding-bottom: 20px;
 }
 
-.myProjectsList li .cardBottom {
+.cardBottom {
     display: flex;
     align-items: center;
 }
 
-.myProjectsList li .cardBottom img {
+.cardBottom img {
     margin-right: 16px;
 }
 
-.myProjectsList li .cardBottom span {
+.cardBottom span {
     display: flex;
     margin-left: auto;
 }
@@ -460,19 +387,12 @@ body {
     margin-top: 30px;
 
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     padding-left: 30px;
 
     border-radius: 20px;
     background: var(--bg-cards);
     box-shadow: var(--box-shadow);
-}
-
-.myRecentPosts h1 {
-    color: #837E9F;
-    font-family: Merriweather Sans;
-    font-size: 20px;
-    font-weight: 700;
 }
 
 /* MY RECENT POSTS LIST */
@@ -496,44 +416,31 @@ body {
     gap: 30px;
 
     padding: 30px;
-
-    color: #837E9F;
-    font-family: Merriweather Sans;
 }
 
-.myRecentPostsList li .imageProfile img {
+.imageProfile img {
     width: 128px;
     height: 128px;
 
     border-radius: 128px;
 }
 
-.myRecentPostsList li .subjects h1{
-    font-size: 20px;
-    font-weight: 700;
-
+.subjects h1{
     padding-bottom: 5px;
 }
 
-.myRecentPostsList li .subjects h2{
-    font-size: 12px;
-    font-weight: 300;
-
-    padding-bottom: 5px;
+.subjects h2{
+    padding-bottom: 10px;
 }
 
-.myRecentPostsList li .subjects h3{
-    font-size: 14px;
-    font-weight: 400;
-    text-align: justify;
-
+.subjects h3{
     padding-bottom: 15px;
 }
 
-.myRecentPostsList li .subjects ul {
+.subjects ul {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 45px;
 
     list-style: none;
