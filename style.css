@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    --bg-cards: #302F3D;
+}
+
 body {
     background-color: #22212C;
     display: flex;
@@ -11,35 +16,34 @@ body {
     align-content: center;
 }
 
-#container {
+.container {
     display: flex;
     width: 1440px;
 }
 
-#personalInformation {
+.container .personalInformation {
+    margin-top: 40px;
+    margin-left: 40px;
+
     width: 348px;
-    margin: 40px auto auto 40px;
 }
 
-#personalProjects {
-    width: 952px;
-    margin: 40px 40px auto auto;
-}
+/* PROFILE */
 
-#profile {
+.container .personalInformation .profile {
     border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    background: var(--bg-cards);
+    box-shadow: var(--box-shadow);
 }
 
-#profile img {
+.container .personalInformation .profile img {
     margin: 32px 110px 30px;
     width: 128px;
     border-radius: 128px;
-    border: 2px solid #0F0; 
+    border: 2px solid #0F0;
 }
 
-#name p{
+.container .personalInformation .profile .information h1 {
     font-family: Merriweather Sans;
     color: #837E9F;
     font-size: 23px;
@@ -49,7 +53,7 @@ body {
     padding-bottom: 10px;
 }
 
-#position p {
+.container .personalInformation .profile .information h3 {
     color: #837E9F;
     font-family: Merriweather Sans;
     font-size: 13px;
@@ -59,54 +63,51 @@ body {
     padding-bottom: 49px;
 }
 
-#educationalBackground {
+/* EDUCATIONAL BACKGROUND */
+
+.container .personalInformation .educationalBackground {
     color: #837E9F;
     font-family: Merriweather Sans;
     border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    background: var(--bg-cards);
+    box-shadow: var(--box-shadow);
 
     margin-top: 30px;
     padding: 30px 40px;
 }
 
-#educationalBackgroundTitle{
+.container .personalInformation .educationalBackground h1 {
     font-size: 20px;
     font-weight: 700;
 
     padding-bottom: 20px;
 }
 
-#institutionName {
+.container .personalInformation .educationalBackground h2 {
     font-size: 14px;
     font-weight: 600;
 
     padding-bottom: 5px;
 }
 
-#Title {
+.container .personalInformation .educationalBackground h3 {
     font-size: 14px;
     font-weight: 500;
 
     padding-bottom: 5px;
 }
 
-#educationalBackgroundTime {
-    font-size: 12px;
-    font-weight: 300;
-
-    padding-bottom: 2px;
-}
-
-#today {
+.container .personalInformation .educationalBackground p {
     font-size: 12px;
     font-weight: 300;
 }
 
-#links {
+/* LINKS */
+
+.links {
     border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    background: var(--bg-cards);
+    box-shadow: var(--box-shadow);
 
     margin-top: 30px;
 
@@ -118,7 +119,7 @@ body {
     padding: 30px 40px;
 }
 
-#links li {
+.links li {
     display: flex;
     align-items: center;
     color: #837E9F;
@@ -127,27 +128,29 @@ body {
     font-weight: 400;
 }
 
-#links li a {
+.links li a {
     color: #837E9F;
     padding-left: 20px;
     text-decoration: none;
 }
 
-#links li p {
+.links li p {
     padding-left: 20px;
 }
 
-#technologies {
+/* TECHNOLOGIES */
+
+.technologies {
     display: block;
     border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    background: var(--bg-cards);
+    box-shadow: var(--box-shadow);
 
     padding: 30px 20px;
     margin-top: 30px;
 }
 
-#technologiesTitle {
+.technologies h1 {
     color: #837E9F;
     font-family: Merriweather Sans;
     font-size: 20px;
@@ -156,14 +159,14 @@ body {
     padding-bottom: 20px;
 }
 
-#technologiesList {
+.technologies .technologiesList {
     display: grid;
     list-style: none;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px 15px;
 }
 
-#technologiesList li {
+.technologies .technologiesList li {
     color: black;
     text-align: center;
     font-family: Merriweather Sans;
@@ -174,16 +177,18 @@ body {
     background: #CB92B1;
 }
 
-#technologies li p {
+.technologies .technologiesList li p {
     padding-top: 6px;
     padding-bottom: 7px;
 }
 
-#workExperience {
+/* ACADEMIC EXPERIENCE */
+
+.academicExperience {
     display: block;
     border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    background: var(--bg-cards);
+    box-shadow: var(--box-shadow);
 
     color: #837E9F;
     font-family: Merriweather Sans;
@@ -192,14 +197,14 @@ body {
     padding: 30px 20px;
 }
 
-#workExperienceTitle {
+.academicExperience h1 {
     font-size: 20px;
     font-weight: 700;
 
     padding-bottom: 20px;
 }
 
-#workExperienceList {
+.academicExperience .academicExperienceList {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -207,63 +212,37 @@ body {
     padding: 0px 20px;
 }
 
-#companyName {
+.academicExperience .academicExperienceList li h1 {
     font-size: 14px;
     font-weight: 700;
 
     padding-bottom: 4px;
 }
 
-#jobTitle {
+.academicExperience .academicExperienceList li h2 {
     font-size: 13px;
     font-weight: 500;
 
     padding-bottom: 2px;
 }
 
-#workTime {
+.academicExperience .academicExperienceList li h3 {
     font-size: 12px;
     font-weight: 300;
 }
 
-#description{
+.academicExperience .academicExperienceList li p {
     font-size: 12px;
     font-weight: 400;
 }
 
-#academicExperience {
+/* CERTIFICATES */
+
+.certificates {
     display: block;
     border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-
-    color: #837E9F;
-    font-family: Merriweather Sans;
-
-    margin-top: 30px;
-    padding: 30px 20px;
-}
-
-#academicExperienceTitle {
-    font-size: 20px;
-    font-weight: 700;
-
-    padding-bottom: 20px;
-}
-
-#academicExperienceList {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-
-    padding: 0px 20px;
-}
-
-#certificates {
-    display: block;
-    border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    background: var(--bg-cards);
+    box-shadow: var(--box-shadow);
 
     color: #837E9F;
     font-family: Merriweather Sans;
@@ -271,16 +250,17 @@ body {
     padding: 30px;
 
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-#certificates p {
+.certificates h1 {
     font-size: 20px;
     font-weight: 700;
 
     padding-bottom: 15px;
 }
 
-#certificates button {
+.certificates button {
     border: none;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);;
@@ -293,11 +273,20 @@ body {
     padding: 8px;
 }
 
-#aboutMe {
+/* MAIN */
+
+.main {
+    width: 952px;
+    margin: 40px 40px auto auto;
+}
+
+/* ABOUT ME */
+
+.aboutMe {
     display: block;
     border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    background: var(--bg-cards);
+    box-shadow: var(--box-shadow);
 
     color: #837E9F;
     font-family: Merriweather Sans;
@@ -305,24 +294,80 @@ body {
     padding: 30px;
 }
 
-#aboutMeTitle {
+.aboutMe h1 {
     font-size: 20px;
     font-weight: 700;
     
     padding-bottom: 20px;
 }
 
-#aboutMeDescription {
+.aboutMe p {
     font-weight: 300;
     text-align: justify;
 }
 
-#myProjects {
+/* WORK EXPERIENCE */
+
+.workExperience {
+    display: block;
+    border-radius: 20px;
+    background: var(--bg-cards);
+    box-shadow: var(--box-shadow);
+
+    color: #837E9F;
+    font-family: Merriweather Sans;
+
+    margin-top: 30px;
+    padding: 30px 20px;
+}
+
+.workExperience h1 {
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-bottom: 20px;
+}
+
+.workExperienceList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 0px 20px;
+}
+
+.workExperience .workExperienceList li h1 {
+    font-size: 14px;
+    font-weight: 700;
+
+    padding-bottom: 4px;
+}
+
+.workExperience .workExperienceList li h2 {
+    font-size: 13px;
+    font-weight: 500;
+
+    padding-bottom: 2px;
+}
+
+.workExperience .workExperienceList li h3 {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.workExperience .workExperienceList li p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* MY PROECTS */
+
+.myProjects {
     display: flex;
     align-items: center;
     border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    background: var(--bg-cards);
+    box-shadow: var(--box-shadow);
 
     color: #837E9F;
     font-family: Merriweather Sans;
@@ -330,7 +375,7 @@ body {
     margin-top: 30px;
 }
 
-#myProjectsTitle {
+.myProjects h1 {
     font-size: 20px;
     font-weight: 700;
 
@@ -339,7 +384,7 @@ body {
     padding-bottom: 30px;
 }
 
-#myProjects a {
+.myProjects a {
     color: #837E9F;
     font-family: Merriweather Sans;
     text-decoration: none;
@@ -349,7 +394,9 @@ body {
     margin-right: 30px;
 }
 
-#myProjectsList {
+/* MY PROJECTS LIST */
+
+.myProjectsList {
     display: grid;
     list-style: none;
     grid-template-columns: repeat(2, 1fr);
@@ -358,11 +405,11 @@ body {
     margin-top: 30px;
 }
 
-#myProjectsList li {
+.myProjectsList li {
     display: block;
     border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    background: var(--bg-cards);
+    box-shadow: var(--box-shadow);
 
     padding: 30px;
 
@@ -370,21 +417,22 @@ body {
     font-family: Merriweather Sans;
 }
 
-#projectHeader {
+.myProjectsList li .cardTop {
     display: flex;
     align-items: center;
     padding-bottom: 22px;
 }
 
-#projectHeader img {
+.myProjectsList li .cardTop img {
     margin-right: 16px;
 }
 
-#projectTitle {
+.myProjectsList li .cardTop h1 {
+    font-size: 20px;
     font-weight: 700;
 }
 
-#projectDescription {
+.myProjectsList li .cardMiddle p {
     font-weight: 400;
     font-size: 14px;
     text-align: justify;
@@ -392,38 +440,44 @@ body {
     padding-bottom: 20px;
 }
 
-#projectFooter {
+.myProjectsList li .cardBottom {
     display: flex;
     align-items: center;
 }
 
-#projectFooter img {
+.myProjectsList li .cardBottom img {
     margin-right: 16px;
 }
 
-#projectFooter span {
+.myProjectsList li .cardBottom span {
     display: flex;
     margin-left: auto;
 }
 
-#myRecentPosts {
+/* MY RECENT POSTS */
+
+.myRecentPosts {
     margin-top: 30px;
 
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
-    
+
+    border-radius: 20px;
+    background: var(--bg-cards);
+    box-shadow: var(--box-shadow);
+}
+
+.myRecentPosts h1 {
     color: #837E9F;
     font-family: Merriweather Sans;
     font-size: 20px;
     font-weight: 700;
-
-    border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
 }
 
-#myRecentPostsList {
+/* MY RECENT POSTS LIST */
+
+.myRecentPostsList {
     display: flex;
     list-style: none;
     flex-direction: column;
@@ -434,11 +488,11 @@ body {
     margin-bottom: 50px;
 }
 
-#myRecentPostsList > li {
+.myRecentPostsList > li {
     display: flex;
     border-radius: 20px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    background: var(--bg-cards);
+    box-shadow: var(--box-shadow);
     gap: 30px;
 
     padding: 30px;
@@ -447,14 +501,36 @@ body {
     font-family: Merriweather Sans;
 }
 
-#imageProfile img {
+.myRecentPostsList li .imageProfile img {
     width: 128px;
     height: 128px;
 
     border-radius: 128px;
 }
 
-#recentPostsListSubjects {
+.myRecentPostsList li .subjects h1{
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-bottom: 5px;
+}
+
+.myRecentPostsList li .subjects h2{
+    font-size: 12px;
+    font-weight: 300;
+
+    padding-bottom: 5px;
+}
+
+.myRecentPostsList li .subjects h3{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+
+    padding-bottom: 15px;
+}
+
+.myRecentPostsList li .subjects ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -463,24 +539,3 @@ body {
     list-style: none;
 }
 
-#recentPostsTitle {
-    font-size: 20px;
-    font-weight: 700;
-
-    padding-bottom: 5px;
-}
-
-#recentPostsDate {
-    font-size: 12px;
-    font-weight: 300;
-
-    padding-bottom: 5px;
-}
-
-#recentPostsDescription {
-    font-size: 14px;
-    font-weight: 400;
-    text-align: justify;
-
-    padding-bottom: 15px;
-}
