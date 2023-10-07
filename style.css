@@ -14,20 +14,30 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    height: 100vh;
 }
 
 .container {
     color: #837E9F;
     font-family: Merriweather Sans;
     display: flex;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
 }
 
 .personalInformation {
-    margin-top: 40px;
-    margin-left: 40px;
+    /* margin-top: 40px;
+    margin-left: 40px; */
+    margin: 40px auto;
 
-    width: 348px;
+    width: 100%;
+    max-width: 348px;
+}
+
+.main {
+    width: 100%;
+    max-width: 952px;
+    margin: 40px auto;
 }
 
 h1 {
@@ -220,7 +230,7 @@ h3 {
     padding: 30px;
 
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 button {
@@ -241,8 +251,9 @@ button h2 {
 /* MAIN */
 
 .main {
-    width: 952px;
-    margin: 40px 40px auto auto;
+    width: 100%;
+    max-width: 952px;
+    margin: 40px auto;
 }
 
 /* ABOUT ME */
@@ -441,8 +452,53 @@ button h2 {
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 45px;
+    gap: 15px;
 
     list-style: none;
 }
 
+@media (max-width: 1440px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 770px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 460px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .main {
+        max-width: 390px;
+    }
+
+    .myProjectsList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .myRecentPostsList > li {
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto; 
+    }
+
+    .myRecentPostsList > li .imageProfile {
+        display: none;
+    }
+}
