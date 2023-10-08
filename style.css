@@ -34,12 +34,6 @@ body {
     max-width: 348px;
 }
 
-.main {
-    width: 100%;
-    max-width: 952px;
-    margin: 40px auto;
-}
-
 h1 {
     font-size: 20px;
     font-weight: 700;
@@ -384,7 +378,7 @@ button h2 {
 }
 
 .cardBottom img {
-    margin-right: 16px;
+    margin-right: 5px;
 }
 
 .cardBottom span {
@@ -472,6 +466,16 @@ button h2 {
 
     .main {
         max-width: 700px;
+    }
+
+    .cardBottom p {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .subjects ul p {
+        font-size: 13px;
+        font-weight: 300;
     }
 }
 
