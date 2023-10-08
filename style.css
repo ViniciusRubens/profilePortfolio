@@ -413,8 +413,10 @@ button h2 {
     margin-bottom: 50px;
 }
 
-.myRecentPostsList > li {
+.myRecentPostsList > li a {
     display: flex;
+    text-decoration: none;
+    color: #837E9F;
     border-radius: 20px;
     background: var(--bg-cards);
     box-shadow: var(--box-shadow);
