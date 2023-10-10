@@ -350,7 +350,10 @@ h3 {
     margin-top: 30px;
 }
 
-.myProjectsList li {
+.myProjectsList li a {
+    text-decoration: none;
+    color: #837E9F;
+    font-family: Merriweather Sans;
     display: block;
     border-radius: 20px;
     background: var(--bg-cards);
