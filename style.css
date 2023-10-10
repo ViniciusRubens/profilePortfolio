@@ -227,15 +227,19 @@ h3 {
     margin-bottom: 30px;
 }
 
-button {
+.certificates a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
     border: none;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);;
 
     padding: 8px;
-}
+}  
 
-button h2 {
+.certificates a h2 {
     color: #837E9F;
     text-align: center;  
 
