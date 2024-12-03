@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #22212C;
+    background-color: #2F4F4F;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    color: #837E9F;
+    color: #f0f0f0;
     font-family: Merriweather Sans;
     display: flex;
     flex-direction: column;
@@ -185,7 +185,7 @@ h3 {
     font-weight: 700;
 
     border-radius: 30px;
-    background: #CB92B1;
+    background: #dee9e9;
 }
 
 .technologiesList li p {
@@ -252,7 +252,7 @@ h3 {
     text-decoration: none;
     border: none;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);;
+    background: #dee9e9;
 
     padding: 8px;
 }  
