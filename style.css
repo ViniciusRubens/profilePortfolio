@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #2F4F4F;
+    background-color: #708090;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -150,7 +150,7 @@ h3 {
 }
 
 .links li a {
-    color: #837E9F;
+    color: #dee9e9;
     padding-left: 20px;
     text-decoration: none;
 }
